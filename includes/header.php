@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
 
     <title>Kaktus turisticka agencija</title>
 </head>
@@ -28,22 +29,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Početna</a>
+                        <a class="nav-link" href="index.php">Početna</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">O nama</a>
+                        <a class="nav-link" href="about-us.php">O nama</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destinacije</a>
+                        <a class="nav-link" href="destinations.php">Destinacije</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
+                        <a class="nav-link" href="contact.php">Kontakt</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Vrednovanje</a>
+                        <a class="nav-link" href="gallery.php">Galerija</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Prijavite se</a>
+                        <a class="nav-link" href="valuation.php">Vrednovanje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Prijavite se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="registration.php">Registruj se</a>
                     </li>
                 </ul>
             </div>

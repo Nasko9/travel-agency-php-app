@@ -1,7 +1,7 @@
 <?php require_once('includes/header.php') ?>
 
 <div>
-    <!-- Slider -->
+    <!-- Slajder -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -41,15 +41,14 @@
         </button>
     </div>
 
-    <!-- Content -->
+    <!-- Sadrzaj -->
     <div class="container">
-        <!-- Header -->
         <div class="mt-5 text-center">
             <p>Putujte sa nama i budite uvek:</p>
             <h1>Za kilometar ispred svih...</h1>
         </div>
 
-        <!-- Destinations -->
+        <!-- Destinacije -->
         <div class="mt-5">
             <h2>Dostupne destinacije</h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 destination-row">
@@ -92,7 +91,7 @@
             </div>
         </div>
 
-        <!--Todo: Valuation  -->
+        <!--Todo: Vrednovanje  -->
     </div>
 </div>
 

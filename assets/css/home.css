@@ -31,8 +31,8 @@
 }
 
 /* Specific screens */
-@media (min-width: 420px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .destination-col {
-    width: 50%;
+    max-width: 300px;
   }
 }
