@@ -2,6 +2,16 @@
   height: 190px;
 }
 
+.slide-btn{
+  background-color: #78bc71;
+}
+
+.slide-btn:hover{
+  background-color: white;
+  color: black;
+  border: 1px solid #78bc71;
+}
+
 /* XS */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .carousel-item {
@@ -32,6 +42,9 @@
 
 /* Specific screens */
 @media (max-width: 576px) {
+  .destination-row{
+    justify-content: center;
+  }
   .destination-col {
     max-width: 300px;
   }

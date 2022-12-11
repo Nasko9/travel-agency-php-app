@@ -2,7 +2,7 @@
 
     <div class="container registration-form-page">
         <div class="form-container">
-            <h1>Registrujte se</h1>
+            <h1>Promenite unete podatke</h1>
             <div class="mb-3">
                 <form action="/" method="POST">
                     <div class="mb-3">
@@ -30,10 +30,10 @@
                         <input type="password" class="form-control" id="registrationConfirmPassword">
                     </div>
 
-                    <button type="submit" class="btn">Registruj se</button>
+                    <button type="submit" class="btn">Izvrši izmenu</button>
                 </form>
             </div>
         </div>
     </div>
 
-<?php require_once('includes/footer.php') ?>
+<?php require_once('includes/footer.php') ?><?php
