@@ -10,6 +10,9 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/ea423c9116.js" crossorigin="anonymous"></script>
 
+    <!-- JS -->
+    <script src="assets/js/validation.js"></script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/home.css">
