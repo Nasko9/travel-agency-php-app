@@ -26,14 +26,14 @@
                     <div class="mb-3">
                         <label for="registrationPassword" class="form-label">Šifra</label>
                         <input type="password" class="form-control" id="registrationPassword"
-                               required
+                               required minlength="5" maxlength="10"
                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                     </div>
 
                     <div class="mb-3">
                         <label for="registrationConfirmPassword" class="form-label">Potvrdi šifru</label>
                         <input type="password" class="form-control" id="registrationConfirmPassword"
-                               required
+                               required minlength="5" maxlength="10"
                                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                     </div>
 
