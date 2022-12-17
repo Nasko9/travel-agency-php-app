@@ -8,15 +8,15 @@
                     <div class="mb-3">
                         <label for="loginContact" class="form-label">Email adresa</label>
                         <input type="email" class="form-control" id="loginContact" autocomplete="off" required
-                               minlength="5" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                               minlength="5" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" oninvalid="this.setCustomValidity(' ')" onchange="checkForm('login')">
                     </div>
 
                     <div class=" mb-3">
                         <label for="loginPassword" class="form-label">Šifra</label>
                         <input type="password" class="form-control" id="loginPassword" autocomplete="off" required
-                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity(' ')" onchange="checkForm('login')">
                     </div>
-                    <button type="submit" class="btn" id="logIn">Prijavite se</button>
+                    <button type="submit" class="btn" id="logIn" disabled>Prijavite se</button>
                 </form>
             </div>
             <div>

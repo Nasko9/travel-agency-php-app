@@ -6,24 +6,25 @@
             <div class="mb-3">
                 <form action="/" method="POST" name="editUserForm">
                     <div class="mb-3">
-                        <label for="registrationName" class="form-label">Ime</label>
-                        <input type="text" class="form-control" id="registrationName" required minlength="2"
-                               maxlength="20">
+                        <label for="editName" class="form-label">Ime</label>
+                        <input type="text" class="form-control" id="editName" required minlength="2"
+                               maxlength="20" oninvalid="this.setCustomValidity(' ')" onchange="checkForm('editUser')">
                     </div>
 
                     <div class="mb-3">
-                        <label for="registrationLastName" class="form-label">Prezime</label>
-                        <input type="text" class="form-control" id="registrationLastName" required minlength="2"
-                               maxlength="20">
+                        <label for="editLastName" class="form-label">Prezime</label>
+                        <input type="text" class="form-control" id="editLastName" required minlength="2"
+                               maxlength="20" oninvalid="this.setCustomValidity(' ')" onchange="checkForm('editUser')">
                     </div>
 
                     <div class="mb-3">
-                        <label for="registrationContact" class="form-label">Email adresa</label>
-                        <input type="email" class="form-control" id="registrationContact" required
-                               minlength="5" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <label for="editContact" class="form-label">Email adresa</label>
+                        <input type="email" class="form-control" id="editContact" required
+                               minlength="5" maxlength="40" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                               oninvalid="this.setCustomValidity(' ')" onchange="checkForm('editUser')">
                     </div>
 
-                    <button type="submit" class="btn" id="editUserBtn">Izvrši izmenu</button>
+                    <button type="submit" class="btn" id="editUserBtn" disabled>Izvrši izmenu</button>
                 </form>
             </div>
         </div>
