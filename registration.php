@@ -26,15 +26,13 @@
                     <div class="mb-3">
                         <label for="registrationPassword" class="form-label">Šifra</label>
                         <input type="password" class="form-control" id="registrationPassword"
-                               required
-                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity(' ')" onchange="checkForm('registration')">
+                               required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity(' ')" onchange="checkForm('registration')">
                     </div>
 
                     <div class="mb-3">
                         <label for="registrationConfirmPassword" class="form-label">Potvrdi šifru</label>
                         <input type="password" class="form-control" id="registrationConfirmPassword"
-                               required
-                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity(' ')" onchange="checkForm('registration')">
+                               required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" oninvalid="this.setCustomValidity(' ')" onchange="checkForm('registration')">
                     </div>
 
                     <button type="submit" class="btn" id="registerBtn" disabled>Registruj se</button>
