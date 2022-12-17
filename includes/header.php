@@ -12,6 +12,7 @@
 
     <!-- JS -->
     <script src="assets/js/validation.js"></script>
+    <script src="assets/js/checkForm.js"></script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/global.css">

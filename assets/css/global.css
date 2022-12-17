@@ -26,12 +26,12 @@
 
 /* Vrednovanje  */
 .valuation-container{
-  min-height: calc(100vh - 150px);
+  min-height: 100vh;
 }
 
 /* Forme */
 .form-page {
-  min-height: calc(100vh - 254px);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -55,12 +55,12 @@
 }
 
 /* Single destination stranica*/
-.single-destination{
-  min-height: calc(100vh - 200px);
+.destination{
+  min-height: 100vh;
 }
 
 /*Profilna stranica*/
 .profile{
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
 }
 

@@ -1,6 +1,6 @@
 <?php require_once('includes/header.php') ?>
 
-<div class="container single-destination">
+<div class="container destination">
     <div class="d-flex flex-wrap mt-5">
         <div class="d-flex flex-column justify-content-center col-lg-6 pe-lg-5">
             <h1>Vila Sophia</h1>
