@@ -1,18 +1,13 @@
 <?php
-require_once('includes/header.php');
-$dbServerName = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName = "milos_naskovic_its_7_21";
-
-$conn = mysqli_connect($dbServerName, $dbUsername, $dbPassword, $dbName);
-
+    require_once('includes/header.php');
+    include 'config/connection.php';
 ?>
 
     <div class="container destination">
         <h1 class="mt-2 mb-3">Destinacije</h1>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 destination-row">
             <?php
+            $conn = OpenCon();
             $sql = "select * from destinacije";
             $result = mysqli_query($conn, $sql);
             while ($row = mysqli_fetch_assoc($result)) :

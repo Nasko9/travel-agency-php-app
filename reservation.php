@@ -6,7 +6,7 @@
             <div class="mb-3">
                 <form action="/" method="POST" name="reservation-form">
                     <div class="mb-3">
-                        <select class="form-select" aria-label="destinationReservation" required>
+                        <select class="form-select" aria-label="destinationReservation" id="destinationReservation" required oninvalid="this.setCustomValidity(' ')" onchange="checkForm('reservation')">
                             <option value="">Izaberite lokaciju</option>
                             <option value="pariz">Pariz</option>
                             <option value="london">London</option>
@@ -15,7 +15,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <select class="form-select" aria-label="seatsReservation" required>
+                        <select class="form-select" aria-label="seatsReservation" id="seatsReservation" required oninvalid="this.setCustomValidity(' ')" onchange="checkForm('reservation')">
                             <option value="">Izaberite broj mesta</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -25,7 +25,7 @@
                         </select>
                     </div>
 
-                    <button type="submit" class="btn" id="reservationBtn">Napravite rezervaciju</button>
+                    <button type="submit" class="btn" id="reservationBtn" disabled>Napravite rezervaciju</button>
                 </form>
             </div>
         </div>

@@ -67,6 +67,13 @@ function checkForm(formName) {
             } else {
                 document.getElementById('editDestinationBtn').setAttribute('disabled', true);
             }
-
+        case 'reservation':
+            const destinationReservation = document.getElementById('destinationReservation').value;
+            const seatsReservation = document.getElementById('seatsReservation').value;
+            if (destinationReservation && seatsReservation) {
+                document.getElementById('reservationBtn').removeAttribute('disabled');
+            } else {
+                document.getElementById('reservationBtn').setAttribute('disabled', true);
+            }
     }
 }
