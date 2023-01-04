@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,9 +57,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="login.php">Prijavite se</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="registration.php">Registruj se</a>
-                </li>
+                <?php  
+                    if(isset($_SESSION['user'])){
+                        echo '<li class="nav-item"> <a class="nav-link" href="logout.php">Odjavite se</a> </li>';
+                    }
+                    else{
+                        echo '<li class="nav-item"> <a class="nav-link" href="registration.php">Registruj se</a> </li>';
+                    }
+                ?>
+                
             </ul>
         </div>
     </div>

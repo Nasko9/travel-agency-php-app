@@ -20,7 +20,7 @@
         } else {
             $conn = OpenCon();
             $query = "INSERT INTO korisnik (ime, prezime, email, rola, passwordHash, datum_registracije)
-                        VALUES ('$registrationName', '$registrationLastName', '$registrationContact', 'korisnik', '" . password_hash($registrationPassword, PASSWORD_DEFAULT) . "', NOW())";
+                        VALUES ('$registrationName', '$registrationLastName', '$registrationContact', 'korisnik', '" . MD5($registrationPassword) . "', NOW())";
             mysqli_query($conn, $query);
             mysqli_close($conn);
             echo '<div class="alert alert-success" role="alert">
