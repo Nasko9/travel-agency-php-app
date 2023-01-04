@@ -25,7 +25,7 @@
 }
 
 /* Vrednovanje  */
-.valuation-container{
+.valuation-container {
   min-height: 100vh;
 }
 
@@ -47,7 +47,8 @@
   border: 1px solid #78bc71;
 }
 
-.registration-form-page{
+.registration-form-page {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   margin-top: 50px;
@@ -55,12 +56,11 @@
 }
 
 /* Single destination stranica*/
-.destination{
+.destination {
   min-height: 100vh;
 }
 
 /*Profilna stranica*/
-.profile{
+.profile {
   min-height: 100vh;
 }
-
