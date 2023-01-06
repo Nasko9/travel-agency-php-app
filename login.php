@@ -12,7 +12,9 @@ if(isset($_POST['loginContact']) && isset($_POST['loginPassword'])){
 
     if(mysqli_num_rows($result)===1){
         $row = mysqli_fetch_assoc($result);
-        $_SESSION['user'] = $row['email'];
+        $_SESSION['id']=$row['id'];
+        $_SESSION['email'] = $row['email'];
+        $_SESSION['role'] = $row['rola'];
         header('Location: index.php?message=Ulogovali+ste+se');
         exit();
     } else{
@@ -27,7 +29,11 @@ if(isset($_POST['loginContact']) && isset($_POST['loginPassword'])){
         echo '<div class="alert alert-danger" role="alert">' . $message . '</div>';
     }
 ?>
-
+<?php  
+     if(isset($_SESSION['email'])){
+        header("Location: index.php");
+     } else {
+?>
 <div class="container form-page">
     <div class="form-container">
         <h1>Prijavite se</h1>
@@ -77,5 +83,9 @@ if(isset($_POST['loginContact']) && isset($_POST['loginPassword'])){
 <script>
     initiate("logIn", "form[name='login-form']");
 </script>
+
+<?php
+}     
+?>
 
 <?php require_once('includes/footer.php'); ?>

@@ -29,7 +29,12 @@
         }
     }
 ?>
+<?php  
+     if(isset($_SESSION['email'])){
+        header("Location: index.php");
+     } else {
 
+?>
     <div class="container registration-form-page">
         <div class="form-container">
             <h1>Registrujte se</h1>
@@ -119,6 +124,9 @@
     <script>
         initiate("registerBtn", "form[name='registration-form']");
     </script>
-
+    
+<?php
+}     
+?>
 
 <?php require_once('includes/footer.php') ?>

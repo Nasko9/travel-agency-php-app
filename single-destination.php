@@ -1,4 +1,7 @@
-<?php require_once('includes/header.php') ?>
+<?php require_once('includes/header.php');
+$url_id = $_GET['id'];
+echo $url_id;
+?>
 
 <div class="container destination">
     <div class="d-flex flex-wrap mt-5">

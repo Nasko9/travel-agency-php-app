@@ -45,9 +45,10 @@ function checkForm(formName) {
             const destinationSeats = document.getElementById('destinationSeats').value;
             const destinationStartDate= document.getElementById('destinationStartDate').value;
             const destinationEndDate = document.getElementById('destinationEndDate').value;
-            const destinationType = document.getElementById('destinationType').value;
+            // const destinationDescription = document.getElementById('destinationDescriptione').value;
 
-            if (destinationAccommodation && destinationName && destinationCountry && destinationContinent && destinationSeats && destinationStartDate && destinationEndDate && destinationType) {
+
+            if (destinationAccommodation && destinationName && destinationCountry && destinationContinent && destinationSeats && destinationStartDate && destinationEndDate) {
                 document.getElementById('addDestinationId').removeAttribute('disabled');
             } else {
                 document.getElementById('addDestinationId').setAttribute('disabled', true);
@@ -61,8 +62,9 @@ function checkForm(formName) {
             const editDestinationStartDate= document.getElementById('editDestinationStartDate').value;
             const editDestinationEndDate = document.getElementById('editDestinationEndDate').value;
             const editDestinationType = document.getElementById('editDestinationType').value;
+            const editDestinationImg = document.getElementById('editDestinationImg').value;
 
-            if (editDestinationAccommodation && editDestinationName && editDestinationCountry && editDestinationContinent && editDestinationSeats && editDestinationStartDate && editDestinationEndDate && editDestinationType) {
+            if (editDestinationAccommodation && editDestinationName && editDestinationCountry && editDestinationContinent && editDestinationSeats && editDestinationStartDate && editDestinationEndDate && editDestinationType && editDestinationImg) {
                 document.getElementById('editDestinationBtn').removeAttribute('disabled');
             } else {
                 document.getElementById('editDestinationBtn').setAttribute('disabled', true);
